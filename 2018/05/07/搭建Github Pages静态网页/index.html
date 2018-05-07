@@ -7,18 +7,18 @@
   
   <title>搭建Github Pages静态网页 | 我先走了！！！</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="测试">
+  <meta name="description" content="快速开始 本地开发环境要先有node npm git这些配置 使用 npm 安装 Hexo：在命令行中输入 1npm install hexo-cli -g  安装完后查看版本 1hexo version   创建项目 使用hexo创建本地项目 1hexo init xxx.github.io  使用npm安装 1npm install  运行 1hexo s  如果以上步骤出错 123sudo">
 <meta name="keywords" content="github,hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="搭建Github Pages静态网页">
 <meta property="og:url" content="http://yoursite.com/2018/05/07/搭建Github Pages静态网页/index.html">
 <meta property="og:site_name" content="我先走了！！！">
-<meta property="og:description" content="测试">
+<meta property="og:description" content="快速开始 本地开发环境要先有node npm git这些配置 使用 npm 安装 Hexo：在命令行中输入 1npm install hexo-cli -g  安装完后查看版本 1hexo version   创建项目 使用hexo创建本地项目 1hexo init xxx.github.io  使用npm安装 1npm install  运行 1hexo s  如果以上步骤出错 123sudo">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-07T05:45:01.000Z">
+<meta property="og:updated_time" content="2018-05-07T12:02:33.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建Github Pages静态网页">
-<meta name="twitter:description" content="测试">
+<meta name="twitter:description" content="快速开始 本地开发环境要先有node npm git这些配置 使用 npm 安装 Hexo：在命令行中输入 1npm install hexo-cli -g  安装完后查看版本 1hexo version   创建项目 使用hexo创建本地项目 1hexo init xxx.github.io  使用npm安装 1npm install  运行 1hexo s  如果以上步骤出错 123sudo">
   
     <link rel="alternate" href="/atom.xml" title="我先走了！！！" type="application/atom+xml">
   
@@ -88,11 +88,45 @@
     <div class="article-entry" itemprop="articleBody">
       
         <a id="more"></a>
-<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3>
+<h3 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h3><ul>
+<li>本地开发环境要先有<code>node</code> <code>npm</code> <code>git</code>这些配置</li>
+<li><p>使用 <code>npm</code> 安装 <code>Hexo</code>：在命令行中输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装完后查看版本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo version</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h3><ul>
+<li><p>使用hexo创建本地项目</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init xxx.github.io</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用npm安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>运行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果以上步骤出错</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install hexo-server</span><br><span class="line">或者</span><br><span class="line">npm install hexo -server --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>关联到github</p>
+<ul>
+<li>生成ssh:ssh-keygen -t rsa -C “xxxxxxxxx”</li>
+<li>上传到github</li>
+<li>测试：ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a><ul>
+<li>提交并部署<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">删除旧的 public 文件</span><br><span class="line">hexo clean</span><br><span class="line">生成新的 public 文件</span><br><span class="line">hexo generate</span><br><span class="line">或者</span><br><span class="line">hexo g</span><br><span class="line">开始部署</span><br><span class="line">hexo deploye</span><br><span class="line">或者</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/07/搭建Github Pages静态网页/" data-id="cjgvtoe9s0000ixooc5nlny2v" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/07/搭建Github Pages静态网页/" data-id="cjgw75i7a00007doo8mcwg4u1" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
